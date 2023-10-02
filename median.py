@@ -9,10 +9,10 @@ while True:
         length = len(numbers)
         if length % 2 == 0:
             middle = length / 2
-            middle_l, middle_r = middle - 1, middle 
+            middle_l, middle_r = int(middle - 1), int(middle) 
             numbers = (numbers[middle_l] + numbers[middle_r]) / 2
         elif length % 2 == 1:
-            middle = length / 2 - 0.5
+            middle = int(length / 2 - 0.5)
             numbers = numbers[middle]
 
     except ValueError:
